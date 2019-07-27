@@ -4,18 +4,33 @@ It creates a .git file within the current directory.  You need to do this in ord
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
-The staging area is like a temporary space.  You don't really work on the files that are there.  It helps you organize what you want to put into your repository.
+The staging area is like a temporary space.  You don't really work on
+ the files that are there.  It helps you organize what you want to put 
+ into your repository.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+You can use "git diff --staged" to compare what you have in the staging area
+ to what you have in the most recent commit.  You can use "git diff"
+ to compare what is in the working directory to what is in the staging area.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+If you want to try an experimental change that you want to keep separate
+from your main work.  It would allow you to track work on each branch 
+separately.
 
 How do the diagrams help you visualize the branch structure?
+A diagram can help me to see how the branches relate to each other 
+and whether there are any detached heads or other issues.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+We are commiting features from each branch.  The diagram shows us that the
+ current branch now has parents from two different branches.
+
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+It could be less work to merge automatically, but there could be resulting conflicts that need to be addressed.
